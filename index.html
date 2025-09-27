@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>Portfolio de Samuel Galliani-Royer</title>
@@ -7,184 +7,182 @@
 </head>
 <body class="parallax">
 
-    <nav>
-    <a class="boutonNav" href="#profil">profil</a>
-    <a class="boutonNav" href="#competence">competence</a>
-    <a class="boutonNav" href="#portfolio">portfolio</a>
-    <a class="boutonNav" href="#contact">contactez moi</a>
-    </nav>
+<nav>
+    <a class="boutonNav" href="#profil">Profil</a>
+    <a class="boutonNav" href="#competence">Compétences</a>
+    <a class="boutonNav" href="#portfolio">Portfolio</a>
+    <a class="boutonNav" href="#contact">Contactez-moi</a>
+</nav>
+
+<div class="rechercheStage">
+    <div id="rechercheAlternance">
+        <p class="cursor typewriter-animation">
+            Je suis à la recherche d'un stage de 2 à 3 mois
+        </p>
+    </div>
+</div>
+
+<div id="accueil" class="page">
+    <h1 class="title">Samuel Galliani-Royer</h1>
+    <h2>Étudiant développeur web</h2>
+    <img id="profilPhoto" src="./image/photo%20cv.jpg" alt="Photo de profil Samuel Galliani-Royer">
+</div>
+
+<div id="profil" class="page">
+    <h2 class="titrePage">À propos de moi</h2>
+    <p>Bienvenue sur mon portfolio !</p>
+    <p>Étudiant de 18 ans à la Coding Factory by ESIEE-IT en formation Bachelor Développeur de Solutions Numériques et Sécurisées, je développe mes compétences en HTML/CSS, PHP, JavaScript et bien d'autres.</p>
+    <p>J'aime la technologie depuis le collège, lorsque je me suis intéressé à la technologie embarquée dans le domaine de l'automobile. J'ai ensuite découvert le code au lycée avec des technologies telles que Python ou MySQL.</p>
+    <p>Je souhaite aujourd'hui poursuivre mon parcours professionnel dans le domaine du développement web. C'est dans cet objectif et dans le cadre de mes études que je suis à la recherche d'un stage qui pourra éventuellement mener à une alternance.</p>
+</div>
+
+<div id="competence" class="page">
+    <h2 class="titrePage">Compétences</h2>
+    <div id="divImageCv">
+        <img id="imageCv" src="./image/cv%20screen.png" alt="Capture d'écran CV Samuel Galliani-Royer">
+        <!-- suppression de l'ancore vide -->
+        <button class="button" onclick="downloadCV()">Télécharger</button>
+    </div>
+</div>
 
 
-    <div class="rechercheStage">
-        <div id="rechercheAlternance">
-            <p class="cursor typewriter-animation">
-                je suis a la recherche d'un stage de 2 a 3 mois
+<div id="portfolio" class="page">
+    <h2 class="titrePage">Portfolio</h2>
+    <div id="parentProjet">
+        <div id="memory" class="projet">
+            <p>Site de Memory</p>
+            <img id="memoryImage" class="projetImage" src="./image/memory.png" alt="Aperçu site Memory">
+            <button class="openOverlay">Voir plus</button>
+        </div>
+        <div id="projetPortfolio" class="projet">
+            <p>Portfolio</p>
+            <img id="PortfolioImage" class="projetImage" src="./image/portfolio%20screen.png" alt="Aperçu site Portfolio">
+            <button class="openOverlay">Voir plus</button>
+        </div>
+        <div id="projetFlowr" class="projet">
+            <p>Flowr</p>
+            <img id="FlowrImage" class="projetImage" src="./image/Flowr%20Screen.png" alt="Aperçu site Flowr">
+            <button class="openOverlay">Voir plus</button>
+        </div>
+        <div id="projetVanneurActuel" class="projet">
+            <p>Vanneurs Actuels</p>
+            <img id="VanneurImage" class="projetImage" src="./image/vanneur.png" alt="Aperçu site Vanneurs Actuels">
+            <button class="openOverlay">Voir plus</button>
+        </div>
+    </div>
+</div>
+
+<!-- Overlay -->
+<div id="overlay" class="overlay hidden">
+    <div class="overlay-content">
+        <button id="closeOverlay" class="button-close">Fermer</button>
+        <h2 class="modal-title">Projet Memory</h2>
+        <div class="overlayContentChild">
+            <p>
+                Site de jeu de Memory interactif avec un système de gestion de comptes, de sauvegarde et classement des scores.
             </p>
-        </div>
-    </div>
-
-
-    <div id="acceuil" class="page">
-        <h1 class="title">Samuel Galliani-Royer</h1>
-        <h2>Etudiant developpeur web</h2>
-        <img id="profilPhoto" src="./image/photo%20cv.jpg">
-    </div>
-    <div id="profil" class="page">
-       <h2 class="titrePage">A propos de moi</h2>
-        <p>Bienvenue sur mon portfolio !</p>
-        <p>Étudiant de 18 ans à la Coding Factory by ESIEE-IT en formation Bachelor Développeur de Solution Numérique et Sécurisée, je développe mes compétences en HTML/CSS, PHP, JavaScript et bien d'autres.</p>
-        <p>J'aime la technologie depuis que je suis au collège lorsque je me suis intéressé à la technologie embarquée dans le domaine de l'automobile. J'ai ensuite découvert le code au lycée avec des technologies telles que Python ou MySQL.</p>
-        <p>Je souhaite ainsi aujourd'hui poursuivre mon parcours professionnel dans le domaine du développement web. C'est dans cet objectif et dans le cadre de mes études que je suis à la recherche d'un stage qui pourra éventuellement mener à une alternance.</p>
-    </div>
-    <div id="competence" class="page">
-        <h2 class="titrePage">competence</h2>
-        <div id="divImageCv">
-            <img id="imageCv" src="./image/cv%20screen.png">
-            <a href="./image/Cv%20Samuel%20Galliani-Royer-4.pdf" download="Samuel_Galliani-Royer_CV.png"></a>
-            <button class="button" onclick="downloadCV()">Telecharger</button>
-        </div>
-    </div>
-    <div id="portfolio" class="page">
-        <h2 class="titrePage">Portfolio</h2>
-        <div id="parentProjet">
-            <div id="memory" class="projet">
-                <p>Site de memory</p>
-                <img id="memoryImage" class="projetImage" src="./image/memory.png">
-                <button class="openOverlay">Voir plus</button>
-            </div>
-            <div id="projetPortfolio" class="projet">
-                <p>Portfolio</p>
-                <img id="PortfolioImage" class="projetImage" src="./image/portfolio%20screen.png">
-                <button class="openOverlay">Voir plus</button>
-            </div>
-
-            <div id="projetFlowr" class="projet">
-                <p>Flowr</p>
-                <img id="FlowrImage" class="projetImage" src="./image/Flowr%20Screen.png">
-                <button class="openOverlay">Voir plus</button>
-            </div>
-
-            <div id="projetVanneurActuel" class="projet">
-                <p>Vanneur Actuel</p>
-                <img id="VanneurImage" class="projetImage" src="./image/vanneur.png">
-                <button class="openOverlay">Voir plus</button>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- Overlay -->
-    <div id="overlay" class="overlay hidden">
-        <div class="overlay-content">
-            <button id="closeOverlay" class="button-close">Fermer</button>
-            <h2 class="modal-title">Projet Memory</h2>
-            <div class="overlayContentChild">
-                <p>
-                    Site de jeu de memory interactif avec un systeme de gestion de compte, de sauvergarde et classement de scores.
-                </p>
-                <p>
-                    Projet d'une durée de 4 semaines en groupe de 4 personnes.
-                </p>
-                <img class="imageInOverlay" src="./image/memoryPageAccueil.png">
-                <div class="listeLanguage">
-                    <img class="imageLanguage" src="./image/logoHtml.png">
-                    <img class="imageLanguage" src="./image/logoCss.png">
-                    <img class="imageLanguage" src="./image/logo_php.png">
-                    <img class="imageLanguage" src="./image/logo_js.png">
-                    <img class="imageLanguage" src="./image/logo_ajax.png">
-                    <img class="imageLanguage" src="./image/logoMySql.png">
-                </div>
+            <p>
+                Projet d'une durée de 4 semaines en groupe de 4 personnes.
+            </p>
+            <img class="imageInOverlay" src="./image/memoryPageAccueil.png" alt="Page d'accueil Memory">
+            <div class="listeLanguage">
+                <img class="imageLanguage" src="./image/logoHtml.png" alt="Logo HTML">
+                <img class="imageLanguage" src="./image/logoCss.png" alt="Logo CSS">
+                <img class="imageLanguage" src="./image/logo_php.png" alt="Logo PHP">
+                <img class="imageLanguage" src="./image/logo_js.png" alt="Logo JavaScript">
+                <img class="imageLanguage" src="./image/logo_ajax.png" alt="Logo AJAX">
+                <img class="imageLanguage" src="./image/logoMySql.png" alt="Logo MySQL">
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Overlay 2 -->
-    <div id="overlay2" class="overlay hidden">
-        <div class="overlay-content">
-            <button id="closeOverlay2" class="button-close">Fermer</button>
-            <h2 class="modal-title">Portfolio</h2>
-            <div class="overlayContentChild">
-                <p>
-                    Site sur lequel vous vous trouvez actuellement et qui est voué à évoluer.
-                </p>
-                <div class="listeLanguage">
-                    <img class="imageLanguage" src="./image/logoHtml.png">
-                    <img class="imageLanguage" src="./image/logoCss.png">
-                    <img class="imageLanguage" src="./image/logo_js.png">
-                </div>
+<!-- Overlay 2 -->
+<div id="overlay2" class="overlay hidden">
+    <div class="overlay-content">
+        <button id="closeOverlay2" class="button-close">Fermer</button>
+        <h2 class="modal-title">Portfolio</h2>
+        <div class="overlayContentChild">
+            <p>
+                Site sur lequel vous vous trouvez actuellement et qui est voué à évoluer.
+            </p>
+            <div class="listeLanguage">
+                <img class="imageLanguage" src="./image/logoHtml.png" alt="Logo HTML">
+                <img class="imageLanguage" src="./image/logoCss.png" alt="Logo CSS">
+                <img class="imageLanguage" src="./image/logo_js.png" alt="Logo JavaScript">
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Overlay 3 -->
-    <div id="overlay3" class="overlay hidden">
-        <div class="overlay-content">
-            <button id="closeOverlay3" class="button-close">Fermer</button>
-            <h2 class="modal-title">Flowr</h2>
-            <div class="overlayContentChild">
-                <p>
-                    Flowr est un site de création et de gestion de liste. Pour noël, les anniversaires ou les fêtes, Flowr vous accompagne dans la gestion de vos cadeaux.
-                </p>
-                <p>
-                    Projet de 4 semaines espacés sur 3 mois, travail réaliser en binôme. Le projet a été réalisé en laravel.
-                </p>
-                <a class="lienProjet" href="https://flowr.space" target="_blank" rel="noopener noreferrer"> Lien vers le site Flowr</a>
-                <img class="imageInOverlay"  src="./image/flowr.png">
-                <div class="listeLanguage">
-                    <img class="imageLanguage" src="./image/logoHtml.png">
-                    <img class="imageLanguage" src="./image/logoCss.png">
-                    <img class="imageLanguage" src="./image/logo_js.png">
-                    <img class="imageLanguage" src="./image/logoMySql.png">
-                    <img class="imageLanguage" src="./image/Laravel-Logo.wine.png">
-                </div>
+<!-- Overlay 3 -->
+<div id="overlay3" class="overlay hidden">
+    <div class="overlay-content">
+        <button id="closeOverlay3" class="button-close">Fermer</button>
+        <h2 class="modal-title">Flowr</h2>
+        <div class="overlayContentChild">
+            <p>
+                Flowr est un site de création et de gestion de listes. Pour Noël, les anniversaires ou les fêtes, Flowr vous accompagne dans la gestion de vos cadeaux.
+            </p>
+            <p>
+                Projet de 4 semaines espacée sur 3 mois, travail réalisé en binôme. Le projet a été réalisé en Laravel.
+            </p>
+            <a class="lienProjet" href="https://flowr.space" target="_blank" rel="noopener noreferrer">Lien vers le site Flowr</a>
+            <img class="imageInOverlay" src="./image/flowr.png" alt="Capture d'écran site Flowr">
+            <div class="listeLanguage">
+                <img class="imageLanguage" src="./image/logoHtml.png" alt="Logo HTML">
+                <img class="imageLanguage" src="./image/logoCss.png" alt="Logo CSS">
+                <img class="imageLanguage" src="./image/logo_js.png" alt="Logo JavaScript">
+                <img class="imageLanguage" src="./image/logoMySql.png" alt="Logo MySQL">
+                <img class="imageLanguage" src="./image/Laravel-Logo.wine.png" alt="Logo Laravel">
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Overlay 4 -->
-    <div id="overlay4" class="overlay hidden">
-        <div class="overlay-content">
-            <button id="closeOverlay4" class="button-close">Fermer</button>
-            <h2 class="modal-title">Vaznneur Actuel</h2>
-            <div class="overlayContentChild">
-                <p>
-                    J'ai réaliser le site du collectif "Les Vanneurs Actuel", qui est une boite de production travaillant sur diffèrent domaines. J'ai fait l'integralité du site, du design de la partie front, au back-end avec une interface de gestion d'article sur la page actualité.
-                </p>
-                <p>
-                    Projet de 6 semaines (en étant en parallele sur un autre projet en groupe), réaliser en autonomie.
-                </p>
-                <a class="lienProjet" href="https://vanneursactuels.com/" target="_blank" rel="noopener noreferrer"> Lien vers le site Vanneurs Actuel</a>
-                <img class="imageInOverlay"  src="./image/flowr.png">
-                <div class="listeLanguage">
-                    <img class="imageLanguage" src="./image/logoHtml.png">
-                    <img class="imageLanguage" src="./image/logoCss.png">
-                    <img class="imageLanguage" src="./image/logo_js.png">
-                    <img class="imageLanguage" src="./image/logoMySql.png">
-                </div>
+<!-- Overlay 4 -->
+<div id="overlay4" class="overlay hidden">
+    <div class="overlay-content">
+        <button id="closeOverlay4" class="button-close">Fermer</button>
+        <h2 class="modal-title">Vanneurs Actuels</h2>
+        <div class="overlayContentChild">
+            <p>
+                J’ai réalisé le site du collectif "Les Vanneurs Actuels", une boîte de production travaillant dans différents domaines. J'ai fait l'intégralité du site, du design de la partie front, au back-end avec une interface de gestion d'articles sur la page actualité.
+            </p>
+            <p>
+                Projet de 6 semaines (en parallèle d’un autre projet en groupe), réalisé en autonomie.
+            </p>
+            <a class="lienProjet" href="https://vanneursactuels.com/" target="_blank" rel="noopener noreferrer">Lien vers le site Vanneurs Actuels</a>
+            <img class="imageInOverlay" src="./image/vanneur.png" alt="Capture d'écran site Vanneurs Actuels">
+            <div class="listeLanguage">
+                <img class="imageLanguage" src="./image/logoHtml.png" alt="Logo HTML">
+                <img class="imageLanguage" src="./image/logoCss.png" alt="Logo CSS">
+                <img class="imageLanguage" src="./image/logo_js.png" alt="Logo JavaScript">
+                <img class="imageLanguage" src="./image/logoMySql.png" alt="Logo MySQL">
             </div>
         </div>
     </div>
+</div>
 
-    <div id="contact" class="page">
-        <h2 class="titrePage">Me contacter</h2>
-        <div id="mail" class="contacts">samuelgallianiroyer@gmail.com</div>
-        <div id="tel" class="contacts">07 88 44 74 64</div>
-        <div>
-            <a id="linkedin" class="contacts" href="https://www.linkedin.com/in/samuel-galliani-royer-13968b342>">www.linkedin.com/in/samuel-galliani-royer-13968b342</a>
-        </div>
-        <div>
-            <a id="github" class="contacts" href="https://github.com/samgr78">github.com/samgr78</a>
-        </div>
+<div id="contact" class="page">
+    <h2 class="titrePage">Me contacter</h2>
+    <div id="mail" class="contacts">samuelgallianiroyer@gmail.com</div>
+    <div id="tel" class="contacts">07 88 44 74 64</div>
+    <div>
+        <a id="linkedin" class="contacts" href="https://www.linkedin.com/in/samuel-galliani-royer-13968b342" target="_blank">Linkedin</a>
     </div>
+    <div>
+        <a id="github" class="contacts" href="https://github.com/samgr78" target="_blank">Github</a>
+    </div>
+</div>
 
-    <div id="retour_haut_page">
-        <a id="texte_haut_page" href="#" class="btn btn-default">⬆</a>
-    </div>
+<div id="retour_haut_page">
+    <a id="texte_haut_page" href="#" class="btn btn-default">⬆</a>
+</div>
 
 <footer>
-    <p>© SAMUEL GALLIANI--ROYER. All rights reserved</p>
+    <p>© Samuel Galliani-Royer. Tous droits réservés</p>
 </footer>
-
 
 <script src="./overlay.js"></script>
 <script src="./function.js"></script>

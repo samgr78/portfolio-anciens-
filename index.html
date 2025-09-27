@@ -27,7 +27,7 @@
     <div id="acceuil" class="page">
         <h1 class="title">Samuel Galliani-Royer</h1>
         <h2>Etudiant developpeur web</h2>
-        <img src="./image/photo.png">
+        <img id="profilPhoto" src="./image/photo%20cv.jpg">
     </div>
     <div id="profil" class="page">
        <h2 class="titrePage">A propos de moi</h2>
@@ -39,8 +39,8 @@
     <div id="competence" class="page">
         <h2 class="titrePage">competence</h2>
         <div id="divImageCv">
-            <img id="imageCv" src="./image/samuel.png">
-            <a href="./image/samuel-1.pdf" download="Samuel_Galliani-Royer_CV.png"></a>
+            <img id="imageCv" src="./image/cv%20screen.png">
+            <a href="./image/Cv%20Samuel%20Galliani-Royer-4.pdf" download="Samuel_Galliani-Royer_CV.png"></a>
             <button class="button" onclick="downloadCV()">Telecharger</button>
         </div>
     </div>
@@ -54,7 +54,19 @@
             </div>
             <div id="projetPortfolio" class="projet">
                 <p>Portfolio</p>
-                <img id="PortfolioImage" class="projetImage" src="./image/portfolio.png">
+                <img id="PortfolioImage" class="projetImage" src="./image/portfolio%20screen.png">
+                <button class="openOverlay">Voir plus</button>
+            </div>
+
+            <div id="projetFlowr" class="projet">
+                <p>Flowr</p>
+                <img id="FlowrImage" class="projetImage" src="./image/Flowr%20Screen.png">
+                <button class="openOverlay">Voir plus</button>
+            </div>
+
+            <div id="projetVanneurActuel" class="projet">
+                <p>Vanneur Actuel</p>
+                <img id="VanneurImage" class="projetImage" src="./image/vanneur.png">
                 <button class="openOverlay">Voir plus</button>
             </div>
 
@@ -90,17 +102,64 @@
     <div id="overlay2" class="overlay hidden">
         <div class="overlay-content">
             <button id="closeOverlay2" class="button-close">Fermer</button>
-            <h2 class="modal-title">Projet Memory</h2>
+            <h2 class="modal-title">Portfolio</h2>
             <div class="overlayContentChild">
                 <p>
                     Site sur lequel vous vous trouvez actuellement et qui est voué à évoluer.
                 </p>
-                <h3 class="overlaySecondTitle">Amelioration futur</h3>
-                <p>Responsive + Animation</p>
                 <div class="listeLanguage">
                     <img class="imageLanguage" src="./image/logoHtml.png">
                     <img class="imageLanguage" src="./image/logoCss.png">
                     <img class="imageLanguage" src="./image/logo_js.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay 3 -->
+    <div id="overlay3" class="overlay hidden">
+        <div class="overlay-content">
+            <button id="closeOverlay3" class="button-close">Fermer</button>
+            <h2 class="modal-title">Flowr</h2>
+            <div class="overlayContentChild">
+                <p>
+                    Flowr est un site de création et de gestion de liste. Pour noël, les anniversaires ou les fêtes, Flowr vous accompagne dans la gestion de vos cadeaux.
+                </p>
+                <p>
+                    Projet de 4 semaines espacés sur 3 mois, travail réaliser en binôme. Le projet a été réalisé en laravel.
+                </p>
+                <a class="lienProjet" href="https://flowr.space" target="_blank" rel="noopener noreferrer"> Lien vers le site Flowr</a>
+                <img class="imageInOverlay"  src="./image/flowr.png">
+                <div class="listeLanguage">
+                    <img class="imageLanguage" src="./image/logoHtml.png">
+                    <img class="imageLanguage" src="./image/logoCss.png">
+                    <img class="imageLanguage" src="./image/logo_js.png">
+                    <img class="imageLanguage" src="./image/logoMySql.png">
+                    <img class="imageLanguage" src="./image/Laravel-Logo.wine.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay 4 -->
+    <div id="overlay4" class="overlay hidden">
+        <div class="overlay-content">
+            <button id="closeOverlay4" class="button-close">Fermer</button>
+            <h2 class="modal-title">Vaznneur Actuel</h2>
+            <div class="overlayContentChild">
+                <p>
+                    J'ai réaliser le site du collectif "Les Vanneurs Actuel", qui est une boite de production travaillant sur diffèrent domaines. J'ai fait l'integralité du site, du design de la partie front, au back-end avec une interface de gestion d'article sur la page actualité.
+                </p>
+                <p>
+                    Projet de 6 semaines (en étant en parallele sur un autre projet en groupe), réaliser en autonomie.
+                </p>
+                <a class="lienProjet" href="https://vanneursactuels.com/" target="_blank" rel="noopener noreferrer"> Lien vers le site Vanneurs Actuel</a>
+                <img class="imageInOverlay"  src="./image/flowr.png">
+                <div class="listeLanguage">
+                    <img class="imageLanguage" src="./image/logoHtml.png">
+                    <img class="imageLanguage" src="./image/logoCss.png">
+                    <img class="imageLanguage" src="./image/logo_js.png">
+                    <img class="imageLanguage" src="./image/logoMySql.png">
                 </div>
             </div>
         </div>
